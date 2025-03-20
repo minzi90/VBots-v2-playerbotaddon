@@ -35,7 +35,6 @@ A World of Warcraft 1.12.1 addon for vmangos bot commands with an improved user 
 
 ### GM Mode Improvements
 - Added manual faction override for GM mode
-- Use `/vbots faction alliance` or `/vbots faction horde` to set your faction manually
 - Improved faction detection for GM characters
 - Fixed issues with faction-specific class buttons and battleground fills in GM mode
 
