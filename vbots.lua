@@ -113,23 +113,12 @@ function SetPlayerFaction(faction)
     end
 end
 
-
 SLASH_VBOTS1 = "/vbots"
-SlashCmdList["VBOTS"] = function(msg)
-    local command, arg = string.match(msg, "^(%S+)%s*(.*)$")
-    
-    if command == "faction" then
-        if arg == "alliance" or arg == "horde" then
-            SetPlayerFaction(arg)
-        else
-            DEFAULT_CHAT_FRAME:AddMessage("Usage: /vbots faction alliance|horde")
-        end
-    else
-        DEFAULT_CHAT_FRAME:AddMessage("VBots commands:")
-        DEFAULT_CHAT_FRAME:AddMessage("/vbots faction alliance|horde - Manually set your faction")
-    end
+SlashCmdList["VBOTS"] = function(msg)    
+    vbotsFrame:Show()
+    MinimapButton.shown = true
+    DEFAULT_CHAT_FRAME:AddMessage("VBots window opened")
 end
-
 
 function MinimapButton:UpdatePosition()
     local radian = self.position * (math.pi/180)
