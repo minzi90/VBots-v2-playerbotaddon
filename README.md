@@ -22,7 +22,7 @@ A World of Warcraft 1.12.1 addon for vmangos bot commands with an improved user 
 3. Rename the folder to `vbots`
 4. Restart World of Warcraft if it's running
 
-## New in v2.1 Beta
+## New in v2.1
 
 ![UI](https://raw.githubusercontent.com/HerrTaeubler/VBots-v2-playerbotaddon/main/botui.jpg)
 
